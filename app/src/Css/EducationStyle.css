@@ -1,0 +1,48 @@
+.educations{
+    width: 100%;
+    margin-top: 1em 0;
+    display: flex;
+    justify-content: space-around;
+}
+h1{
+    text-align: center;
+}
+.card{
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 0 3px black;
+    padding: 1em;
+    
+}
+.educationImg{width: 280px;
+    height: 185px;
+    object-fit: contain;
+}
+@media screen and(max-width:990px){
+    .educations{
+        width: 100%;
+        margin-top: 1em 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+        margin-bottom: 2em;
+        margin-right: 1em;
+    }
+    .educationImg{width: 180px;
+        height: 160px;
+        object-fit: contain;
+    }
+}
+@media screen and(max-width:768px){
+    .educations{
+        flex-direction: column;
+    }
+    .card{
+        width: 70%;
+       margin: 1em;
+    }
+}
